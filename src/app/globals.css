@@ -1,0 +1,393 @@
+@import 'tailwindcss';
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+/* =============================================================================
+   1. DESIGN PALETTES (PRIMITIVES) - ALL CODES INCLUDED
+   ============================================================================= */
+:root {
+    /* Mariner (Primary-brand) */
+    --mariner-50: #f0f7ff;
+    --mariner-100: #e0eefe;
+    --mariner-200: #baddfd;
+    --mariner-300: #7cc2fd;
+    --mariner-400: #37a4f9;
+    --mariner-500: #0d88ea;
+    --mariner-600: #016dcd;
+    --mariner-700: #0254a2;
+    --mariner-800: #064886;
+    --mariner-900: #0b3d6f;
+    --mariner-950: #082749;
+
+    /* Mango Tango (Secondary-brand) */
+    --mango-50: #fffbea;
+    --mango-100: #fff1c5;
+    --mango-200: #ffe385;
+    --mango-300: #ffcf46;
+    --mango-400: #ffb91b;
+    --mango-500: #ff9501;
+    --mango-600: #e26e00;
+    --mango-700: #bb4a02;
+    --mango-800: #983808;
+    --mango-900: #7c2f0b;
+    --mango-950: #481600;
+
+    /* Cinnabar (Tertiary-brand) */
+    --cinnabar-50: #fff1f2;
+    --cinnabar-100: #ffdfe1;
+    --cinnabar-200: #ffc5c8;
+    --cinnabar-300: #ff9ca1;
+    --cinnabar-400: #ff646c;
+    --cinnabar-500: #ff333d;
+    --cinnabar-600: #ee1520;
+    --cinnabar-700: #c80d16;
+    --cinnabar-800: #a50f17;
+    --cinnabar-900: #891319;
+    --cinnabar-950: #4b0408;
+
+    /* Success */
+    --success-50: #f0fdf2;
+    --success-100: #ddfbe3;
+    --success-200: #bdf5ca;
+    --success-300: #89eca0;
+    --success-400: #4eda6e;
+    --success-500: #27c04b;
+    --success-600: #1db240;
+    --success-700: #187d30;
+    --success-800: #18632b;
+    --success-900: #165125;
+    --success-950: #062d11;
+
+    /* Warning */
+    --warning-50: #fff9eb;
+    --warning-100: #ffeec6;
+    --warning-200: #ffdb88;
+    --warning-300: #ffc042;
+    --warning-400: #ffab20;
+    --warning-500: #f98707;
+    --warning-600: #dd6102;
+    --warning-700: #b74106;
+    --warning-800: #94320c;
+    --warning-900: #7a2a0d;
+    --warning-950: #461302;
+
+    /* Error */
+    --error-50: #fef2f2;
+    --error-100: #ffe1e1;
+    --error-200: #ffc9c9;
+    --error-300: #fea3a3;
+    --error-400: #fb6e6e;
+    --error-500: #f34040;
+    --error-600: #e02424;
+    --error-700: #bc1919;
+    --error-800: #9c1818;
+    --error-900: #811b1b;
+    --error-950: #460909;
+
+    /* Neutral */
+    --neutral-50: #fafafa;
+    --neutral-100: #f5f5f5;
+    --neutral-200: #e5e5e5;
+    --neutral-300: #d4d4d4;
+    --neutral-400: #a3a3a3;
+    --neutral-500: #737373;
+    --neutral-600: #525252;
+    --neutral-700: #404040;
+    --neutral-800: #262626;
+    --neutral-900: #171717;
+    --neutral-950: #0a0a0a;
+
+    --white: #ffffff;
+    --black: #000000;
+    --radius: 0.625rem;
+}
+
+/* =============================================================================
+   2. DARK MODE - FULL REPEAT OF PRIMITIVES
+   ============================================================================= */
+.dark {
+    --mariner-50: #f0f7ff;
+    --mariner-100: #e0eefe;
+    --mariner-200: #baddfd;
+    --mariner-300: #7cc2fd;
+    --mariner-400: #37a4f9;
+    --mariner-500: #0d88ea;
+    --mariner-600: #016dcd;
+    --mariner-700: #0254a2;
+    --mariner-800: #064886;
+    --mariner-900: #0b3d6f;
+    --mariner-950: #082749;
+    --mango-50: #fffbea;
+    --mango-100: #fff1c5;
+    --mango-200: #ffe385;
+    --mango-300: #ffcf46;
+    --mango-400: #ffb91b;
+    --mango-500: #ff9501;
+    --mango-600: #e26e00;
+    --mango-700: #bb4a02;
+    --mango-800: #983808;
+    --mango-900: #7c2f0b;
+    --mango-950: #481600;
+    --cinnabar-50: #fff1f2;
+    --cinnabar-100: #ffdfe1;
+    --cinnabar-200: #ffc5c8;
+    --cinnabar-300: #ff9ca1;
+    --cinnabar-400: #ff646c;
+    --cinnabar-500: #ff333d;
+    --cinnabar-600: #ee1520;
+    --cinnabar-700: #c80d16;
+    --cinnabar-800: #a50f17;
+    --cinnabar-900: #891319;
+    --cinnabar-950: #4b0408;
+    --success-50: #f0fdf2;
+    --success-100: #ddfbe3;
+    --success-200: #bdf5ca;
+    --success-300: #89eca0;
+    --success-400: #4eda6e;
+    --success-500: #27c04b;
+    --success-600: #1db240;
+    --success-700: #187d30;
+    --success-800: #18632b;
+    --success-900: #165125;
+    --success-950: #062d11;
+    --warning-50: #fff9eb;
+    --warning-100: #ffeec6;
+    --warning-200: #ffdb88;
+    --warning-300: #ffc042;
+    --warning-400: #ffab20;
+    --warning-500: #f98707;
+    --warning-600: #dd6102;
+    --warning-700: #b74106;
+    --warning-800: #94320c;
+    --warning-900: #7a2a0d;
+    --warning-950: #461302;
+    --error-50: #fef2f2;
+    --error-100: #ffe1e1;
+    --error-200: #ffc9c9;
+    --error-300: #fea3a3;
+    --error-400: #fb6e6e;
+    --error-500: #f34040;
+    --error-600: #e02424;
+    --error-700: #bc1919;
+    --error-800: #9c1818;
+    --error-900: #811b1b;
+    --error-950: #460909;
+    --neutral-50: #fafafa;
+    --neutral-100: #f5f5f5;
+    --neutral-200: #e5e5e5;
+    --neutral-300: #d4d4d4;
+    --neutral-400: #a3a3a3;
+    --neutral-500: #737373;
+    --neutral-600: #525252;
+    --neutral-700: #404040;
+    --neutral-800: #262626;
+    --neutral-900: #171717;
+    --neutral-950: #0a0a0a;
+}
+
+/* =============================================================================
+   3. SHADCN SEMANTIC TOKENS (Connecting Primitives to Components)
+   ============================================================================= */
+:root {
+    --background: var(--neutral-100);
+    --foreground: var(--neutral-900);
+    --primary: var(--mariner-600);
+    --primary-foreground: var(--white);
+    --secondary: var(--mariner-100);
+    --secondary-foreground: var(--neutral-600);
+    --muted: var(--neutral-100);
+    --muted-foreground: var(--neutral-400);
+    --accent: var(--mariner-50);
+    --accent-foreground: var(--mariner-600);
+    --success: var(--success-600);
+    --success-foreground: var(--white);
+    --inactive: var(--neutral-500);
+    --inactive-foreground: var(--white);
+    --destructive: var(--error-600);
+    --destructive-foreground: var(--white);
+    --border: var(--neutral-200);
+    --input: var(--neutral-200);
+    --ring: var(--mariner-600);
+
+    /* --- OVERRIDES START --- */
+    --card: var(--white);
+    --card-foreground: var(--neutral-900);
+
+    --popover: var(--white);
+    --popover-foreground: var(--neutral-900);
+    /* --- OVERRIDES END --- */
+}
+
+/* =============================================================================
+   4. TAILWIND V4 THEME ENGINE - REGISTERING ALL CLASSES
+   ============================================================================= */
+@theme inline {
+    --font-sans:
+        var(--font-inter-sans), var(--font-kantumruy-pro), ui-sans-serif,
+        system-ui;
+    /* Shadcn Semantic Utilities */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-success: var(--success);
+    --color-success-foreground: var(--success-foreground);
+    --color-inactive: var(--inactive);
+    --color-inactive-foreground: var(--inactive-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    /* Full Brand Palette Utilities (Team can call bg-mariner-500, etc.) */
+    --color-mariner-50: var(--mariner-50);
+    --color-mariner-100: var(--mariner-100);
+    --color-mariner-200: var(--mariner-200);
+    --color-mariner-300: var(--mariner-300);
+    --color-mariner-400: var(--mariner-400);
+    --color-mariner-500: var(--mariner-500);
+    --color-mariner-600: var(--mariner-600);
+    --color-mariner-700: var(--mariner-700);
+    --color-mariner-800: var(--mariner-800);
+    --color-mariner-900: var(--mariner-900);
+    --color-mariner-950: var(--mariner-950);
+
+    --color-mango-50: var(--mango-50);
+    --color-mango-100: var(--mango-100);
+    --color-mango-200: var(--mango-200);
+    --color-mango-300: var(--mango-300);
+    --color-mango-400: var(--mango-400);
+    --color-mango-500: var(--mango-500);
+    --color-mango-600: var(--mango-600);
+    --color-mango-700: var(--mango-700);
+    --color-mango-800: var(--mango-800);
+    --color-mango-900: var(--mango-900);
+    --color-mango-950: var(--mango-950);
+
+    --color-cinnabar-50: var(--cinnabar-50);
+    --color-cinnabar-100: var(--cinnabar-100);
+    --color-cinnabar-200: var(--cinnabar-200);
+    --color-cinnabar-300: var(--cinnabar-300);
+    --color-cinnabar-400: var(--cinnabar-400);
+    --color-cinnabar-500: var(--cinnabar-500);
+    --color-cinnabar-600: var(--cinnabar-600);
+    --color-cinnabar-700: var(--cinnabar-700);
+    --color-cinnabar-800: var(--cinnabar-800);
+    --color-cinnabar-900: var(--cinnabar-900);
+    --color-cinnabar-950: var(--cinnabar-950);
+
+    --color-success-50: var(--success-50);
+    --color-success-100: var(--success-100);
+    --color-success-200: var(--success-200);
+    --color-success-300: var(--success-300);
+    --color-success-400: var(--success-400);
+    --color-success-500: var(--success-500);
+    --color-success-600: var(--success-600);
+    --color-success-700: var(--success-700);
+    --color-success-800: var(--success-800);
+    --color-success-900: var(--success-900);
+    --color-success-950: var(--success-950);
+
+    --color-warning-50: var(--warning-50);
+    --color-warning-100: var(--warning-100);
+    --color-warning-200: var(--warning-200);
+    --color-warning-300: var(--warning-300);
+    --color-warning-400: var(--warning-400);
+    --color-warning-500: var(--warning-500);
+    --color-warning-600: var(--warning-600);
+    --color-warning-700: var(--warning-700);
+    --color-warning-800: var(--warning-800);
+    --color-warning-900: var(--warning-900);
+    --color-warning-950: var(--warning-950);
+
+    --color-error-50: var(--error-50);
+    --color-error-100: var(--error-100);
+    --color-error-200: var(--error-200);
+    --color-error-300: var(--error-300);
+    --color-error-400: var(--error-400);
+    --color-error-500: var(--error-500);
+    --color-error-600: var(--error-600);
+    --color-error-700: var(--error-700);
+    --color-error-800: var(--error-800);
+    --color-error-900: var(--error-900);
+    --color-error-950: var(--error-950);
+
+    --color-neutral-50: var(--neutral-50);
+    --color-neutral-100: var(--neutral-100);
+    --color-neutral-200: var(--neutral-200);
+    --color-neutral-300: var(--neutral-300);
+    --color-neutral-400: var(--neutral-400);
+    --color-neutral-500: var(--neutral-500);
+    --color-neutral-600: var(--neutral-600);
+    --color-neutral-700: var(--neutral-700);
+    --color-neutral-800: var(--neutral-800);
+    --color-neutral-900: var(--neutral-900);
+    --color-neutral-950: var(--neutral-950);
+
+    --color-white: var(--white);
+    --color-black: var(--black);
+
+    /* Radii */
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+
+    /* override */
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+}
+
+@layer base {
+    :root {
+        font-family:
+            var(--font-inter-sans), var(--font-kantumruy-pro), ui-sans-serif,
+            system-ui;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground antialiased;
+        font-family: inherit;
+        line-height: 1.65;
+    }
+}
+
+/* ================================
+   LEAFLET FIXES
+================================ */
+.leaflet-container .leaflet-interactive:focus,
+.leaflet-container svg path:focus,
+.leaflet-container svg polygon:focus {
+    outline: none !important;
+}
+
+/* Container for the draw buttons */
+.leaflet-draw-section {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.leaflet-bar a.leaflet-disabled {
+    opacity: 0.7;
+}
+
+/* State when drawing is disabled */
+.leaflet-draw-section a[data-disabled='true'] {
+    pointer-events: none;
+    opacity: 0.7;
+    filter: grayscale(0.5);
+}

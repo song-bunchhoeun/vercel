@@ -1,0 +1,1255 @@
+{
+    "layout": {
+        "logoAlt": "Last Mile Delivery's logo",
+        "dashboard": "Dashboard",
+        "shipments": "Shipments",
+        "jobDispatch": "Job Dispatch",
+        "parcelMissing": "Parcel Missing",
+        "customers": "Customers",
+        "warehouse": "Warehouse",
+        "zone": "Zone",
+        "driver": "Driver",
+        "user": "User",
+        "userAvatarAlt": "User Avatar",
+        "copyright": "© {{year}} Company. All rights reserved."
+    },
+    "common": {
+        "loading": "Loading...",
+        "back": "Back",
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "create": "Create",
+        "close": "Close",
+        "save": "Save",
+        "update": "Update",
+        "remove": "Remove",
+        "riel_symbol": "៛",
+        "riel_text": "Riel",
+        "discard_title": "Discard information?",
+        "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+        "discard_btn": "Discard",
+        "keep_editing": "Keep Editing",
+        "qty": "{{count}} Qty",
+        "riel_format": "{{amount}} Riel (៛)",
+        "not_available": "N/A",
+        "show_more": "Show More",
+        "show_less": "Show Less",
+        "select_at_least_one": "Please select at least one shipment.",
+        "import_bulk": {
+            "button": "Import Bulk",
+            "dialog": {
+                "title": "Invalid file type",
+                "no_data": "No Data Found",
+                "description": "Only XLS files is accepted! You can download a {{template}} here.",
+                "invalid_description": "The imported file contains no shipment data. Please add data and try again.",
+                "template": "template",
+                "close": "Close"
+            }
+        },
+        "toast": {
+            "success": "Success",
+            "failed": "Failed!",
+            "attention": "Attention!",
+            "close": "Close Toast"
+        },
+        "pagination": {
+            "rows_per_page": "Rows per page:",
+            "of": "of",
+            "no_items": "0 of 0"
+        },
+        "empty_state": {
+            "generate_list": "Generate List",
+            "not_found": "Result Not Found"
+        },
+        "time": {
+            "am": "AM",
+            "pm": "PM"
+        },
+        "list_page": {
+            "search": "Search",
+            "created_date": "Created Date",
+            "created_date_label": "mm/dd/yyyy",
+            "search_max_length": "Search cannot exceed {{count}} characters"
+        },
+        "status": {
+            "new": "New",
+            "active": "Active",
+            "inactive": "Inactive",
+            "activate": "Activate",
+            "cancel": "Cancel",
+            "unknown": "Unknown",
+            "updating": "Updating...",
+            "confirm_yes": "Yes, I'm sure",
+            "confirm_no": "No, Cancel it",
+            "update_success": "Status updated successfully.",
+            "update_failed": "Failed to update status. Please try again.",
+            "up_to_date": "Up to date",
+            "synced": "Synced",
+            "pending": "Pending",
+            "assigned": "Assigned",
+            "arrived": "Arrived",
+            "delivered": "Delivered",
+            "picked_up": "Picked Up",
+            "in_transit": "In-Transit",
+            "completed": "Completed",
+            "failed": "Failed",
+            "all": "All"
+        },
+        "filters": {
+            "all": "All",
+            "roles": {
+                "admin": "Admin",
+                "user": "User"
+            },
+            "fleets": {
+                "motorbike": "Motorbike",
+                "tuk_tuk": "Tuk Tuk",
+                "car": "Car",
+                "truck": "Truck"
+            },
+            "driver_status": {
+                "new": "New",
+                "active": "Active",
+                "inactive": "Inactive"
+            }
+        },
+        "address_map": {
+            "title_tag": "Map",
+            "search_label": "Search Location",
+            "search_placeholder": "Type location name or drag map",
+            "unknown_location": "Unknown location",
+            "location_unavailable": "Location unavailable",
+            "confirm": "Confirm",
+            "close": "Close",
+            "map_title": "Find Exact Location",
+            "map_description": "Providing your location enables more accurate search and delivery ETA, real-time shipment tracking, and personalized recommendations.",
+            "label_home": "Home",
+            "label_work": "Work",
+            "label_name": "Name Label",
+            "label_placeholder": "Enter custom label"
+        },
+        "qr_code": {
+            "title": "Log In QR Code",
+            "status_tag": "Scan",
+            "download": "Download",
+            "copy": "Copy",
+            "copied": "Copied",
+            "alt_text": "QR Code",
+            "close": "Close"
+        },
+        "validation": {
+            "required": "{{field}} is required",
+            "invalid_format": "Invalid format",
+            "max": "{{field}} cannot exceed {{max}} characters",
+            "max_digits": "{{field}} cannot exceed {{max}} digits",
+            "min_digits": "{{field}} must be at least {{min}} digits",
+            "min_length": "{{field}} must be at least {{min}} characters",
+            "min_value": "{{field}} must be at least {{min}}",
+            "negative": "{{field}} cannot be negative"
+        },
+        "form": {
+            "phone_placeholder": "Enter contact number"
+        }
+    },
+    "overview": {
+        "title": "Overview",
+        "welcome": "Welcome back"
+    },
+    "shipments": {
+        "list_page": {
+            "title": "Shipment Lists",
+            "create_btn": "Create Shipment",
+            "table": {
+                "customer_name": "Customer Name",
+                "phone_number": "Phone Number",
+                "delivery_address": "Delivery Address",
+                "parcel_qty": "Parcel QTY",
+                "created_date": "Created Date",
+                "task_type": "Task Type",
+                "task_status": "Task Status",
+                "sync_status": "Sync Status",
+                "action": "Action",
+                "drop_off": "Drop-Off",
+                "pick_up": "Pick-Up"
+            },
+            "delete_dialog": {
+                "title": "Are you sure to remove?",
+                "description": "This will delete permanently.",
+                "confirm": "Yes, delete it!",
+                "cancel": "No, Cancel",
+                "success_title": "Shipment deleted",
+                "success_desc": "{{count}} shipment(s) have been deleted from your shipment list."
+            },
+            "empty_state": {
+                "loading": "Loading...",
+                "title": "No Shipment yet",
+                "description": "There are no Shipments to display, start by creating your first one."
+            },
+            "status_cell": {
+                "all_status": "All Status",
+                "cancel": "Cancel",
+                "save": "Save",
+                "saved_toast": "Status saved"
+            }
+        },
+        "status": {
+            "new": "New",
+            "assigned": "Assigned",
+            "in_progress": "In Progress",
+            "completed": "Completed",
+            "failed": "Failed",
+            "cancelled": "Cancelled"
+        },
+        "form": {
+            "create_title": "Create Shipment",
+            "edit_title": "Edit Shipment",
+            "subtitle": "Required fields are clearly indicated with an asterisk (*)",
+            "discard": "Discard",
+            "keep_editing": "Keep Editing",
+            "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+            "sections": {
+                "customer": {
+                    "title": "Customer Information",
+                    "subtitle": "Search for an existing customer or create a new one.",
+                    "name": "Customer's Name",
+                    "name_placeholder": "Search by name or contact",
+                    "create_new": "Add new customer",
+                    "not_found": "No existing customers found",
+                    "primary_phone": "Primary Phone Number",
+                    "secondary_phone": "Secondary Phone Number"
+                },
+                "delivery": {
+                    "title": "Delivery Information",
+                    "subtitle": "Specify where and when the package should be delivered. Use “Find Location” for accurate geolocation.",
+                    "address": "Delivery Address",
+                    "find_location": "Find Location",
+                    "address_placeholder": "Street, City, and Postal Code",
+                    "address_no_label": "No Label",
+                    "address_default": "Default",
+                    "parcel_qty": "Parcel QTY",
+                    "parcel_qty_placeholder": "Enter parcel qty",
+                    "task_type": "Task Type",
+                    "drop_off": "Drop-Off",
+                    "pick_up": "Pick-Up",
+                    "amount": "Amount to collect",
+                    "amount_placeholder": "Enter amount",
+                    "currency": "Currency",
+                    "riel": "Riel (៛)",
+                    "dollar": "Dollar ($)",
+                    "note": "Note",
+                    "note_placeholder": "Write text here ..."
+                }
+            },
+            "actions": {
+                "cancel": "Cancel",
+                "save": "Save Changed",
+                "create": "Create New Shipment"
+            }
+        },
+        "view_details": {
+            "title": "Shipment",
+            "view_text": "View",
+            "close": "Close",
+            "tabs": {
+                "info": "Information",
+                "history": "History"
+            },
+            "info": {
+                "customer_title": "Customer Information",
+                "customer_name": "Customer Name",
+                "shipment_id": "Shipment ID",
+                "created_date": "Shipment Created Date",
+                "primary_phone": "Primary Phone Number",
+                "secondary_phone": "Secondary Phone Number",
+                "delivery_address": "Delivery Address",
+                "address_not_found": "Address not found",
+                "parcel_qty": "Parcel QTY",
+                "amount": "Amount to collect",
+                "task_type": "Task Type",
+                "status": "Status",
+                "note": "Note to driver",
+                "driver_notes": "Driver Notes",
+                "no_reason": "No specific reason provided.",
+                "driver_photos": "Driver upload photos",
+                "no_photos": "No photos uploaded."
+            },
+            "history": {
+                "no_history": "No history found"
+            }
+        },
+        "failure_reason": {
+            "title": "Failure Reason",
+            "cancel": "Cancel",
+            "submit": "Submit",
+            "other_placeholder": "Write text here...",
+            "reasons": {
+                "driver_delayed": "Driver delayed pickup without informing.",
+                "forgot_update": "Driver forgot to update task status.",
+                "duplicate_order": "Duplicate order mistakenly created by the retailer.",
+                "reschedule_request": "Customer requested a reschedule or change of delivery time.",
+                "change_mind": "Customer changed their mind about the purchase at the last minute.",
+                "unreachable": "Customer unreachable.",
+                "other": "Other"
+            }
+        },
+        "messages": {
+            "create_success": "Shipment created successfully.",
+            "update_success": "Shipment updated successfully.",
+            "error_save": "An unexpected error occurred while saving the shipment.",
+            "fetching": "Retrieving shipment details..."
+        },
+        "bulk": {
+            "title": "Bulk Shipment Lists",
+            "subtitle": "Preview or organize group Shipments efficiently",
+            "table": {
+                "no": "N.O",
+                "customer_name": "Customer’s name",
+                "phone": "Phone Number",
+                "delivery_address": "Delivery's address",
+                "parcel_qty": "Parcel Qty",
+                "task_type": "Task Type",
+                "warehouse": "Warehouse",
+                "amount": "Amount to Collect",
+                "currency": "Currency",
+                "retailer_note": "Retailer Note"
+            },
+            "placeholders": {
+                "name": "Name",
+                "phone": "Phone Number",
+                "address": "Address",
+                "qty": "Qty",
+                "select_type": "Select Type",
+                "warehouse": "Select Warehouse",
+                "amount": "Amount",
+                "currency": "Currency",
+                "retailer_note": "Retailer Note",
+                "search": "Search by name or contact"
+            },
+            "messages": {
+                "no_data": "No shipment data to import",
+                "create_success": "Shipment imported successfully.",
+                "create_error": "An unexpected error occurred."
+            },
+            "actions": {
+                "back": "Back",
+                "add_row": "Add Row",
+                "set_warehouse": "Set Warehouse",
+                "remove_row": "Remove Selected Row",
+                "create": "Create",
+                "close": "Close",
+                "understood": "Understood"
+            },
+            "loading": {
+                "preparing": "Preparing Page...",
+                "loading_page": "Loading Page...",
+                "parsing": "Parsing..."
+            },
+            "empty_search": "No results found for \"{{search}}\"",
+            "limit_dialog": {
+                "title": "Limit Reached",
+                "desc": "Maximum 100 shipments allowed.",
+                "import_desc": "Maximum 100 rows allowed per import."
+            },
+            "validation": {
+                "name_format": "Name can only contain letters, numbers, spaces, underscores, and hyphens"
+            }
+        },
+        "bulk_summary": {
+            "title": "Bulk Imported Summary",
+            "preview": "Preview",
+            "total": "Total Shipment",
+            "success": "Success to Import",
+            "failed": "Fails to import",
+            "close": "Close"
+        }
+    },
+    "customers": {
+        "list_page": {
+            "title": "Customer Management",
+            "subtitle": "Manage registered customers and order history",
+            "table": {
+                "id": "Customer ID",
+                "name": "Customer Name",
+                "main_address": "Delivery Address",
+                "home_label": "Home",
+                "no_address": "No address provided",
+                "phone": "Primary Phone Number",
+                "joined_date": "Created Date",
+                "total_orders": "Total Shipments"
+            },
+            "empty_state": {
+                "title": "No customers yet",
+                "description": "No customers have been added. Once you created shipment, they’ll appear here"
+            }
+        },
+        "view_details": {
+            "title": "View Customer",
+            "tabs": {
+                "info": "Customer",
+                "history": "Shipment History"
+            },
+            "info": {
+                "title": "Customer Information",
+                "name": "Customer Name",
+                "id": "Customer ID",
+                "created_date": "Created Date",
+                "primary_phone": "Primary Phone Number",
+                "secondary_phone": "Secondary Phone Number",
+                "delivery_info": "Delivery Information",
+                "default_label": "Default",
+                "no_label": "No Label"
+            },
+            "history": {
+                "loading": "Loading History...",
+                "no_records": "No shipment records found for this customer.",
+                "table": {
+                    "shipment_id": "Shipment ID",
+                    "phone": "Phone Number",
+                    "address": "Delivery Address",
+                    "parcel_qty": "Parcel QTY",
+                    "created_date": "Created Date",
+                    "task_type": "Task Type",
+                    "task_status": "Task Status"
+                }
+            }
+        },
+        "form": {
+            "title_create": "Create New Customer",
+            "title_edit": "Edit Customer Information",
+            "subtitle": "Provide personal and delivery details of your customer",
+            "name": "Customer Name",
+            "gender": "Gender",
+            "primary_phone": "Primary Phone Number",
+            "secondary_phone": "Secondary Phone Number",
+            "address_label": "Address Label",
+            "address_line": "Address Details",
+            "addresses": "Addresses",
+            "add_address": "Add Address",
+            "discard": "Discard",
+            "keep_editing": "Keep Editing",
+            "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+            "create_success": "Customer created successfully.",
+            "edit_success": "Customer updated successfully.",
+            "error_save": "An unexpected error occurred while saving the customer.",
+            "loading": "Loading customer details..."
+        }
+    },
+    "drivers": {
+        "list_page": {
+            "title": "Driver Lists",
+            "create_btn": "Create Driver",
+            "status_filter": "Status",
+            "all_status": "All",
+            "status_active": "Active",
+            "status_inactive": "Inactive",
+            "status_new": "New",
+            "table": {
+                "profile": "Profile",
+                "assigned_zone": "Assigned Zone",
+                "unassigned": "Unassigned",
+                "assigned_fleet": "Assigned Fleet",
+                "primary_phone": "Primary Phone Number",
+                "status": "Driver Status",
+                "actions": "Actions"
+            },
+            "empty_state": {
+                "loading": "Fetching drivers...",
+                "title": "No driver assigned yet",
+                "description": "Click \"Create Driver\" button to assign driver to delivery the shipment."
+            },
+            "download_driver_app": "Download Driver App",
+            "qr_driver_app_scan": "Scan or click to download the Driver App",
+            "qr_activate_scan": "Scan or click on the link to activate the driver account",
+            "qr_driver_app_title": "Download the Driver App"
+        },
+        "view_details": {
+            "title": "Driver",
+            "view_text": "View",
+            "close": "Close",
+            "no_image": "No Image",
+            "name": "Driver Name",
+            "id": "Driver ID",
+            "created_date": "Driver Created Date",
+            "nid": "National Identity (NID)",
+            "primary_phone": "Primary Phone Number",
+            "secondary_phone": "Secondary Phone Number",
+            "assigned_zone": "Assigned Zone",
+            "assigned_fleet": "Assigned Fleet",
+            "status": "Status"
+        },
+        "form": {
+            "create_title": "Create Driver",
+            "edit_title": "Edit Driver",
+            "subtitle": "Required fields are clearly indicated with an asterisk (*)",
+            "file_too_large": "File too large (max 3MB)",
+            "discard": "Discard",
+            "keep_editing": "Keep Editing",
+            "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+            "activate_title": "Activate Account",
+            "deactivate_title": "Deactivate Account",
+            "activate_desc": "Are you sure you want to reactivate this driver account?",
+            "deactivate_desc": "The driver will no longer be able to access the driver app. Are you sure you want to proceed?",
+            "status_activated": "Driver Account Activated",
+            "status_deactivated": "Driver Account Deactivated",
+            "status_deactivated_success": "{{name}}'s driver account has been successfully deactivated.",
+            "status_activated_success": "{{name}}'s driver account has been successfully activated.",
+            "sections": {
+                "profile": {
+                    "title": "Profile Photo",
+                    "subtitle": "Upload a clear photo here",
+                    "upload": "Upload Image",
+                    "remove": "Remove"
+                },
+                "info": {
+                    "title": "Driver Information",
+                    "subtitle": "General information of the driver's profile",
+                    "name": "Driver Name",
+                    "name_placeholder": "3.g.Sok",
+                    "nid": "National Identity (NID)",
+                    "nid_placeholder": "e.g.8283934"
+                },
+                "contact": {
+                    "title": "Contact Details",
+                    "subtitle": "Phone numbers for dispatching and communication.",
+                    "primary": "Primary Phone Number",
+                    "secondary": "Secondary Phone Number"
+                },
+                "employment": {
+                    "title": "Employment Details",
+                    "subtitle": "Enter the driver’s job-related information",
+                    "zone": "Assigned Zone",
+                    "select_zone": "Select zone",
+                    "fleet": "Assign Fleet",
+                    "select_fleet": "Select fleet type"
+                }
+            },
+            "actions": {
+                "cancel": "Cancel",
+                "create": "Create New Driver",
+                "save": "Save Changes"
+            }
+        },
+        "messages": {
+            "create_success": "Driver created successfully.",
+            "create_error": "Create failed",
+            "update_success": "Driver updated successfully.",
+            "update_error": "Update failed",
+            "fetching": "Retrieving driver profile..."
+        }
+    },
+    "warehouses": {
+        "list_page": {
+            "title": "Warehouse Lists",
+            "create_btn": "Create Warehouse",
+            "table": {
+                "name": "Warehouse Name",
+                "address": "Address",
+                "phone": "Phone Number",
+                "created_date": "Created Date",
+                "status": "Warehouse Status",
+                "actions": "Actions"
+            },
+            "status_active": "Active",
+            "status_inactive": "Inactive",
+            "empty_state": {
+                "loading": "Loading...",
+                "title": "No warehouse yet",
+                "description": "Click \"Create Warehouse\" button to add a warehouse or a shop owner"
+            }
+        },
+        "view_details": {
+            "title": "Warehouse",
+            "view_text": "View",
+            "close": "Close",
+            "fetching": "Fetching details...",
+            "name": "Warehouse name",
+            "created_date": "Created Warehouse Date",
+            "address": "Address",
+            "primary_phone": "Primary Phone Number",
+            "secondary_phone": "Secondary Phone Number",
+            "status": "Status",
+            "status_active": "Active",
+            "status_inactive": "Inactive",
+            "images": "Warehouse Images",
+            "not_found": "Warehouse not found.",
+            "location_title": "Delivery Address"
+        },
+        "form": {
+            "create_title": "Create New Warehouse",
+            "edit_title": "Edit Warehouse",
+            "subtitle": "Required fields are clearly indicated with an asterisk (*)",
+            "discard": "Discard",
+            "keep_editing": "Keep Editing",
+            "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+            "activate_title": "Activate Warehouse",
+            "deactivate_title": "Deactivate Warehouse",
+            "activate_desc": "Are you sure you want to activate this warehouse?",
+            "deactivate_desc": "This warehouse will be temporarily inactive. All activities and user access will be paused until it is reactivated. Are you sure you want to proceed?",
+            "status_activated": "Warehouse Activated",
+            "status_deactivated": "Warehouse Deactivated",
+            "status_deactivated_success": "{{name}} warehouse has been successfully deactivated.",
+            "status_activated_success": "{{name}} warehouse has been successfully activated.",
+            "sections": {
+                "about": {
+                    "title": "About Warehouse",
+                    "subtitle": "General information about the warehouse",
+                    "name": "Warehouse Name",
+                    "name_placeholder": "e.g. RocketStar Clothes",
+                    "address": "Address",
+                    "find_location": "Find Location",
+                    "address_placeholder": "Street, City, and Postal Code",
+                    "primary_phone": "Primary Phone Number",
+                    "secondary_phone": "Secondary Phone Number"
+                },
+                "upload": {
+                    "title": "Upload Images",
+                    "subtitle": "Add photos that show your warehouse",
+                    "max_files_error": "Maximum {{max}} files allowed"
+                },
+                "pin_location": "Please pin the location on the map"
+            },
+            "actions": {
+                "cancel": "Cancel",
+                "save": "Save Changed",
+                "create": "Create New Warehouse"
+            },
+            "map": {
+                "title": "Find Exact Location",
+                "description": "Providing your location enables more accurate search and delivery ETA, real‑time shipment tracking, and personalized recommendations."
+            },
+            "create_success": "Warehouse created successfully.",
+            "edit_success": "Warehouse updated successfully.",
+            "create_error": "An unexpected error occurred while saving the warehouse.",
+            "edit_error": "An unexpected error occurred while saving.",
+            "loading": "Loading warehouse details...",
+            "location_title": "Warehouse Location"
+        }
+    },
+    "zones": {
+        "list_page": {
+            "title": "Zone Lists",
+            "create_btn": "Create Zone",
+            "search_placeholder": "Search zone name",
+            "no_found": "No Zone Found",
+            "filters": {
+                "zone_a": "Zone A",
+                "zone_b": "Zone B",
+                "zone_c": "Zone C",
+                "zone_d": "Zone D"
+            },
+            "empty_state": {
+                "title": "No Zone Data",
+                "description": "Click \"Create Zone\" button to create zone"
+            },
+            "delete_dialog": {
+                "title": "Remove \"{{name}}\"?",
+                "description": "This action is permanent and will remove the zone from all assigned drivers.",
+                "confirm": "Yes, delete it",
+                "cancel": "No, Cancel",
+                "success_title": "Zone Deleted",
+                "success_description": "The zone has been removed successfully.",
+                "error": "Failed to delete zone"
+            }
+        },
+        "view_details": {
+            "title": "Zone",
+            "view_text": "View",
+            "close": "Close",
+            "loading": "Loading...",
+            "name": "Zone Name",
+            "created_date": "Zone Created Date"
+        },
+        "item": {
+            "surface_area": "Surface Area:",
+            "city_province": "City/Province:",
+            "districts": "Districts:",
+            "km": "km²"
+        },
+        "form": {
+            "create_title": "Create Zone",
+            "edit_title": "Edit Zone {{name}}",
+            "subtitle": "Select districts to create Zone.",
+            "header_country": "Country",
+            "header_city": "City/Province",
+            "name_label": "Zone Name",
+            "name_placeholder": "e.g.Zone A",
+            "districts_label": "Select {{name}} Districts",
+            "district_or_polygon_required": "You must select at least one district or draw a custom zone",
+            "discard": "Discard",
+            "keep_editing": "Keep Editing",
+            "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+            "activate_title": "Activate Zone",
+            "deactivate_title": "Deactivate Zone",
+            "activate_desc": "Reactivate this zone for logistics operations?",
+            "deactivate_desc": "Drivers assigned to this zone may be affected. Proceed?",
+            "status_update_success": "Zone status has been updated successfully.",
+            "actions": {
+                "cancel": "Cancel",
+                "save": "Save Changes",
+                "create": "Create Zone"
+            },
+            "create_success": "Zone created successfully.",
+            "edit_success": "Zone updated successfully.",
+            "create_error": "Creation failed",
+            "edit_error": "Update failed",
+            "load_error": "Failed to load zone.",
+            "fetching": "Retrieving zone details...",
+            "districts_group": {
+                "toggle": "Toggle"
+            }
+        }
+    },
+    "users": {
+        "list_page": {
+            "title": "User Lists",
+            "create_btn": "Create User",
+            "filters": {
+                "role_label": "Role",
+                "role_all": "All",
+                "role_admin": "Admin",
+                "role_user": "User"
+            },
+            "table": {
+                "profile": "Profile",
+                "role": "Role",
+                "admin": "Admin",
+                "user": "User",
+                "warehouse": "Warehouse",
+                "all_warehouses": "All warehouses",
+                "phone": "Phone Number",
+                "created_date": "Created Date",
+                "status": "User Status",
+                "actions": "Actions"
+            },
+            "status_active": "Active",
+            "status_inactive": "Inactive",
+            "status_new": "New",
+            "empty_state": {
+                "loading": "Loading...",
+                "title": "No user yet",
+                "description": "Click \"Create User\" button to assigned user's role here"
+            },
+            "scan_qr": "Scan or click on the link in User to log in to account"
+        },
+        "view_details": {
+            "title": "User",
+            "view_text": "View",
+            "close": "Close",
+            "loading": "Loading user data...",
+            "admin_role": "Administrator",
+            "standard_role": "Standard User",
+            "fullname": "Full name",
+            "login_id": "Phone Number",
+            "role": "Role",
+            "registration_date": "Created Date",
+            "status": "Status",
+            "status_active": "Active",
+            "status_inactive": "Inactive",
+            "status_new": "New",
+            "assigned_warehouse": "Warehouse",
+            "not_found": "User not found.",
+            "qr_access": "User Account Access"
+        },
+        "form": {
+            "create_title": "Create User",
+            "edit_title": "Edit User",
+            "subtitle": "Required fields are clearly indicated with an asterisk (*)",
+            "file_too_large": "Image size must be smaller than 3MB.",
+            "discard": "Discard",
+            "keep_editing": "Keep Editing",
+            "discard_desc": "If you discard this information, the data you entered will be lost permanently.",
+            "activate_title": "Activate Account",
+            "deactivate_title": "Deactivate Account",
+            "activate_desc": "Are you sure you want to reactivate this user account?",
+            "deactivate_desc": "The user will no longer be able to access the retailer portal. Are you sure you want to proceed?",
+            "status_activated": "User Account Activated",
+            "status_deactivated": "User Account Deactivated",
+            "status_deactivated_success": "{{name}}'s user account has been successfully deactivated.",
+            "status_activated_success": "{{name}}'s user account has been successfully activated.",
+            "create_success": "User created successfully.",
+            "edit_success": "User updated successfully.",
+            "create_error": "An unexpected error occurred while saving the user.",
+            "edit_error": "Update failed",
+            "fetching": "Fetching user details...",
+            "qr_activate": "Scan or click on the link to activate the account",
+            "sections": {
+                "profile": {
+                    "title": "Profile Photo",
+                    "subtitle": "Upload a clear photo here",
+                    "upload": "Upload Image",
+                    "remove": "Remove",
+                    "max_image_size": "File too large (max 3MB)"
+                },
+                "info": {
+                    "title": "About user",
+                    "subtitle": "General information of the user's profile",
+                    "name": "Full name",
+                    "phone": "Phone number",
+                    "name_placeholder": "3.g.Sok",
+                    "contact": "e.g.096 xxx xxxx"
+                },
+                "role": {
+                    "title": "Assigned Users",
+                    "subtitle": "Define the user's role and access",
+                    "tooltip": "View permissions for each role",
+                    "role_label": "User Role",
+                    "admin": "Admin",
+                    "user": "User",
+                    "warehouse": "Warehouse",
+                    "select_warehouse": "Select warehouse",
+                    "warehouse_all_label": "All Warehouse",
+                    "loading_warehouse": "Loading..."
+                }
+            },
+            "warehouse_required": "Warehouse is required for users",
+            "actions": {
+                "cancel": "Cancel",
+                "save": "Save Changes",
+                "create": "Create New User"
+            }
+        },
+        "role_details": {
+            "title": "About Role",
+            "view_text": "View",
+            "admin": {
+                "name": "Admin",
+                "access": "Unlimited Access",
+                "items": {
+                    "shipment": {
+                        "title": "Shipment",
+                        "desc": "Create, edit, view, and delete Shipment."
+                    },
+                    "job_dispatch": {
+                        "title": "Job Dispatch",
+                        "desc": "Manage dispatch operations."
+                    },
+                    "fleet": {
+                        "title": "Driver & Fleet",
+                        "desc": "Full control over vehicle and driver data."
+                    },
+                    "customer": {
+                        "title": "Customer",
+                        "desc": "Manage all customer records."
+                    },
+                    "user": {
+                        "title": "User",
+                        "desc": "Add, edit, activate, or deactivate team members."
+                    },
+                    "warehouse": {
+                        "title": "Warehouse",
+                        "desc": "Add/edit warehouses and manage inventory locations."
+                    }
+                }
+            },
+            "user": {
+                "name": "User",
+                "access": "Limited",
+                "items": {
+                    "shipment": {
+                        "title": "Shipment",
+                        "desc": "Full Shipment management access."
+                    },
+                    "job_dispatch": {
+                        "title": "Job Dispatch",
+                        "desc": "Manage dispatch-related tasks."
+                    },
+                    "fleet": {
+                        "title": "Driver & Fleet",
+                        "desc": "View and manage assigned vehicles/drivers."
+                    },
+                    "customer": {
+                        "title": "Customer",
+                        "desc": "View and manage customer information."
+                    }
+                }
+            }
+        }
+    },
+    "parcel_missing": {
+        "list_page": {
+            "title": "Parcel missing Lists",
+            "table": {
+                "customer_name": "Customer Name",
+                "phone": "Phone Number",
+                "address": "Delivery Address",
+                "task_type": "Task Type",
+                "parcel_qty": "Parcel QTY",
+                "created_date": "Create Date",
+                "task_status": "Task Status",
+                "status_missing": "Missing",
+                "status_found": "Found"
+            },
+            "dialog": {
+                "success_title_found": "Parcel Marked as Found",
+                "success_title_not_found": "Parcel Marked as Not Found",
+                "success_description": "This parcel has been successfully marked as {{status}}.",
+                "confirm_title_found": "Mark as Found",
+                "confirm_title_not_found": "Mark as Not Found",
+                "confirm_description_found": "This parcel will be marked as Found. Are you sure you want to continue?",
+                "confirm_description_not_found": "This parcel will be marked as Not Found. Are you sure you want to continue?",
+                "cancel": "No, Cancel it",
+                "submit": "Submit",
+                "updating": "Updating..."
+            },
+            "empty_state": {
+                "loading": "Loading...",
+                "title": "No parcel yet",
+                "description": "No customers have been added. Once you created shipment, they’ll appear here."
+            }
+        }
+    },
+    "login": {
+        "redirecting": "Redirecting to DGConnect"
+    },
+    "setting": {
+        "title": "Setting",
+        "close": "Close",
+        "permission": {
+            "title": "Permission",
+            "desc_enabled": "Turn it off, driver will no longer upload POD",
+            "desc_disabled": "Turn if on, driver have to upload POD. Are you sure you want to proceed?",
+            "confirm": "Yes, I'm sure",
+            "cancel": "No, Cancel it",
+            "success": "Permission has been updated successfully.",
+            "failed": "Failed to update setting",
+            "label": "Required Driver to upload POD"
+        },
+        "info": {
+            "version": "Version",
+            "created_by": "Create by",
+            "contact": "Contact",
+            "email": "Email",
+            "dgc_committee": "Digital Government Committee"
+        }
+    },
+    "auth": {
+        "unauthorized": {
+            "title": "Unauthorized",
+            "message": "You don’t have access. Please sign in again.",
+            "link": "Go to login"
+        },
+        "forbidden": {
+            "title": "Forbidden",
+            "message": "You're signed in, but you don't have permission to view this page.",
+            "link": "Back to dashboard"
+        },
+        "session_expired": {
+            "title": "Session expired",
+            "message": "Your login session has expired for security reasons. Please sign in again to continue.",
+            "button": "Sign in again"
+        }
+    },
+    "profile": {
+        "title": "Profile",
+        "subtitle": "You can add or make changes to your profile",
+        "edit_title": "Edit Profile",
+        "edit_subtitle": "Update profile details and access",
+        "photo_section": "Profile Photo",
+        "photo_subtitle": "Upload a clear photo here",
+        "upload_btn": "Upload Image",
+        "about_section": "About User",
+        "about_subtitle": "General profile information",
+        "username": "Full Name",
+        "createdDate": "Created Date",
+        "status": "Status",
+        "status_active": "Active",
+        "status_inactive": "Inactive",
+        "role": "Role",
+        "phoneNumber": "Phone Number",
+        "assignedWareHouse": "Assigned Warehouse",
+        "access_section": "Assigned Users",
+        "access_subtitle": "Define the user's role and access",
+        "role_tooltip": "Click for role details",
+        "btnEdit": "Edit",
+        "btnLogout": "Logout",
+        "errors": {
+            "name_required": "Name is required",
+            "phone_required": "Phone number is required",
+            "role_required": "Role selection is required",
+            "warehouse_required": "Warehouse must be assigned for non-admin users",
+            "file_too_large": "The profile image must be smaller than 3MB"
+        },
+        "alerts": {
+            "success": "User profile updated successfully.",
+            "failed": "Failed to update user profile."
+        }
+    },
+    "warehouse": {
+        "all_warehouses": "All Warehouses",
+        "select_placeholder": "Select warehouse"
+    },
+    "job_dispatch": {
+        "list_page": {
+            "header_title": "Job dispatch lists",
+            "syncing_jobs": "Syncing Jobs...",
+            "create_btn": "Create Job Dispatch",
+            "tabs": {
+                "dispatch": "Dispatch",
+                "in_transit": "In-Transit",
+                "completed": "Completed"
+            },
+            "card": {
+                "id_prefix": "ID:",
+                "dispatch_now": "Dispatch Now",
+                "total_shipments": "Total shipments",
+                "parcel_missing": "Parcel missing",
+                "drop_off": "Drop-Off",
+                "pick_up": "Pick-Up",
+                "failed": "Failed",
+                "task_status": "Task Status",
+                "zone_label": "Zone"
+            }
+        },
+        "create_flow": {
+            "step_1": {
+                "title": "Step 1: Select Shipment",
+                "description": "Batch select shipments to be assigned to your delivery fleet.",
+                "tabs": {
+                    "new": "New Orders",
+                    "failed": "Failed"
+                },
+                "task_type_filter": "Task Type",
+                "select_all": "Select All {{tab}} shipments"
+            },
+            "step_2": {
+                "title": "Step 2: Assign Driver",
+                "description": "Select the available driver to deliver this shipment",
+                "confirm_btn": "Confirm Assignment",
+                "total_shipments": "Total Shipments",
+                "total_drivers": "Total Driver",
+                "close_btn": "Close",
+                "assign_btn": "Assign",
+                "auto_assign_btn": "Auto Assign",
+                "stats": {
+                    "shipments": "Shipments",
+                    "drivers": "Drivers",
+                    "tasks": "Tasks"
+                }
+            },
+            "step_3": {
+                "title": "Step 3: Confirm Driver’s Job",
+                "description": "Review assignments before final dispatching.",
+                "driver_id": "Driver ID",
+                "est_arrival": "Est. Arrival",
+                "distance": "Distance",
+                "actions": {
+                    "title": "Setting",
+                    "change_driver": "Change Driver",
+                    "remove_shipment": "Remove Shipment",
+                    "dispatch_later": "Dispatch Later",
+                    "dispatch_now": "Dispatch Now"
+                },
+                "modified_overlay": {
+                    "title": "Can’t create job dispatch yet",
+                    "desc": "The Shipment queue has been changed. Refresh the route to update, or reset to the original route.",
+                    "refresh_btn": "Refresh Route"
+                }
+            },
+            "footer": {
+                "selected_label": "Selected",
+                "selected_count": "{{count}} Shipments",
+                "assign_btn": "Assign Driver"
+            },
+            "validation": {
+                "select_shipment": "Select at least one shipment",
+                "assign_driver": "Assign at least one driver"
+            },
+            "shipment_card": {
+                "drop_off": "Drop-Off",
+                "pick_up": "Pick-Up",
+                "failure": "Failure",
+                "pending": "Pending",
+                "address_not_found": "Address not found",
+                "note": "Note"
+            },
+            "out_of_zone_alert": {
+                "title": "{{count}} Out of Zone.",
+                "desc": "Adjust assignments to drivers within this service area."
+            },
+            "reassign": {
+                "title": "Assign Driver",
+                "desc": "Select a driver for selected shipments"
+            },
+            "actions": {
+                "shipment_actions": "Shipment Actions",
+                "change_driver": "Change Driver",
+                "remove_shipment": "Remove Shipment",
+                "setting": "Setting"
+            },
+            "multi_select": {
+                "task_type": "Task Type"
+            }
+        },
+        "alerts": {
+            "out_of_zone": "{{count}} Out of zone",
+            "out_of_zone_desc": "Adjust or assign to a nearby driver of service area.",
+            "success": "Job Dispatch created and assigned successfully.",
+            "failed": "Failed to create job dispatch"
+        },
+        "empty_states": {
+            "no_shipments_title": "Sorry! You cannot create a job dispatch.",
+            "no_shipments_desc": "Looks like there are no shipments yet, tap here to go to “Shipment page”",
+            "no_dispatch_title": "No job dispatch yet",
+            "no_dispatch_desc": "Tap the “Create Job Dispatch” button to fill in the task details, then assign it to a driver.",
+            "btn_go_to_shipment": "Go to Shipment page"
+        },
+        "details": {
+            "drawer_title": "Driver Task Information",
+            "dispatch_id": "ID: {{id}}",
+            "update_status_label": "Update Task Status",
+            "all_status": "All Status",
+            "set_status": "Set Status",
+            "shipment_prefix": "Shipment #",
+            "warehouse": "Warehouse",
+            "times": {
+                "est": "Est",
+                "act": "Act"
+            },
+            "actions": {
+                "title": "Shipment Actions",
+                "change_driver": "Change Driver",
+                "remove": "Remove Shipment"
+            },
+            "stats": {
+                "total_shipments": "Total Shipments",
+                "zone": "Zone",
+                "est_arrival": "Est. Arrival",
+                "act_arrival": "Act. Arrival"
+            },
+            "task_types": {
+                "drop_off": "Drop-Off",
+                "pick_up": "Pick-Up"
+            },
+            "status_select": {
+                "placeholder": "Set Status",
+                "label": "Update Status"
+            },
+            "shipment_statuses": {
+                "in_transit": "In-Transit",
+                "arrived": "Arrived",
+                "delivered": "Delivered",
+                "failed": "Failed",
+                "pending": "Pending"
+            },
+            "dispatch_statuses": {
+                "dispatch": "Dispatch",
+                "in_transit": "In-Transit",
+                "completed": "Completed"
+            },
+            "syncing_task_data": "Syncing task data...",
+            "est_arrival_label": "Estimate Arrival",
+            "tbd": "TBD",
+            "customer": "Customer",
+            "no_active_stop": "No active stop",
+            "job_prefix": "Job #",
+            "stop_prefix": "Stop #",
+            "note": "Note",
+            "no_phone": "No phone"
+        },
+        "metrics": {
+            "total": "Total",
+            "done": "Done",
+            "failed": "Failed"
+        },
+        "messages": {
+            "job_dispatched": "Job dispatched.",
+            "dispatch_success": "Dispatch jobs successfully.",
+            "dispatch_failed": "Failed to dispatch jobs.",
+            "assign_success": "Assign driver successfully.",
+            "assign_failed": "Failed to assign driver.",
+            "remove_out_of_zone_success": "Remove shipment out of zone successfully.",
+            "change_driver_success": "Change driver successfully.",
+            "change_driver_failed": "Failed to change driver.",
+            "remove_shipment_success": "Remove shipment successfully.",
+            "remove_shipment_failed": "Failed to remove shipment."
+        }
+    },
+    "dashboard": {
+        "overview": {
+            "title": "Merchant Dashboard",
+            "subtitle": "Track your current sales summary and recent activity",
+            "import_bulk": "Import Bulk Shipment",
+            "create_shipment": "Create Shipment",
+            "assigned_warehouses": "Assigned Warehouses",
+            "total_shipments": "Total Shipments",
+            "filters": {
+                "time_range": "Select time range",
+                "time_ranges": {
+                    "24h": "24 hours",
+                    "7d": "7 days",
+                    "60d": "60 days",
+                    "6m": "6 months"
+                },
+                "warehouse_label": "Warehouse",
+                "select_warehouses": "Select Warehouses",
+                "all_warehouses": "All",
+                "select_all": "Select All",
+                "clear": "Clear",
+                "select_dates": "Select Dates",
+                "date_range_aria": "Select date range",
+                "selected_date_range": "Selected date range: {{start}}{{end}}",
+                "aria_label": "Dashboard filters",
+                "filter_by": "Filter by {{range}}"
+            },
+            "stats": {
+                "order_qty": "Order QTY",
+                "order_qty_tooltip": "Total number of successfully delivered orders within the selected date range",
+                "new_customers": "New Customers",
+                "new_customers_tooltip": "Number of new customers acquired (first created) during the selected date range",
+                "all_orders": "All Orders",
+                "all_orders_tooltip": "Cumulative total of all delivered orders for the selected warehouse since the beginning (ignores date filter)",
+                "all_customers": "All Customers",
+                "all_customers_tooltip": "Total number of customers currently in your database for the selected warehouse (ignores date filter)",
+                "selected_period": "Selected Period",
+                "all_time": "All Time",
+                "vs_previous": "vs previous period",
+                "vs_period": "vs {{date}}",
+                "trend_aria": "{{trend}} by {{value}}",
+                "increased": "Increased",
+                "decreased": "Decreased",
+                "info_aria": "Information about {{title}}",
+                "value_aria": "{{title}}: {{value}}"
+            },
+            "rankings": {
+                "drivers_customers": "Drivers & Customers",
+                "show_more": "Show More",
+                "show_less": "Show Less",
+                "drivers_title": "Top Driver Ranking",
+                "drivers_tooltip": "Top Driver Ranking",
+                "drivers_desc": "Drivers with the highest number of completed deliveries during the selected date range",
+                "customers_title": "Top Customer Ranking",
+                "customers_tooltip": "Top Customer Ranking",
+                "customers_desc": "Customers with the highest volume of delivered orders during the selected date range",
+                "headers": {
+                    "rank": "Rank",
+                    "driver_name": "Driver's Name",
+                    "total_orders": "Total Orders",
+                    "customer_name": "Customer Name",
+                    "phone_number": "Phone Number"
+                },
+                "loading": "Loading...",
+                "no_data": "No data to display",
+                "see_more": "See More"
+            },
+            "business_insights": {
+                "title": "Business Insights by Zone",
+                "order_by_zone": {
+                    "title": "Order QTY by Zone",
+                    "delivered_status": "Delivered status",
+                    "tooltip_title": "Order QTY by Zone",
+                    "tooltip_desc": "Breakdown of successful vs. failed deliveries categorized by specific zones",
+                    "delivered": "Delivered",
+                    "failed": "Failed",
+                    "y_axis_label": "Active user in the last 12 months",
+                    "x_axis_label": "Zone/Area"
+                },
+                "heatmap": {
+                    "title": "Order QTY Heatmap",
+                    "tooltip_title": "Order QTY Heatmap",
+                    "tooltip_desc": "Red marks area with higher number of order"
+                },
+                "no_data": "No data to display"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+public
+.gitignore
+node_modules
+.next
+.husky
+coverage
+.prettierignore
+.stylelintignore
+.eslintignore
+mgenerate/*.txt
+dist
+favicon.ico
+*.zip
+src/assets

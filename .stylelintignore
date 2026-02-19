@@ -1,0 +1,5 @@
+coverage
+dist
+*.zip
+src/assets
+src/app/globals.css
