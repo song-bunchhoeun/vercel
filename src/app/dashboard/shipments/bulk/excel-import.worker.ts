@@ -21,9 +21,9 @@ const cleanPhone = (val: CellValue): string => {
     // Strip everything except numbers to satisfy Zod .max(10)
     return String(val).replace(/\D/g, '');
 };
-
+const WAREHOUSE_ID_COL = 8;
 const mapToShipmentData = (row: Row): ShipmentImportData => ({
-    warehouseId: String(row[WAREHOUSE_ID_COL] || "").trim(),
+    warehouseId: String(row[8] || "").trim(),
     customer: {
         name: String(row[0] || '').trim(),
         primaryPhone: cleanPhone(row[1])
