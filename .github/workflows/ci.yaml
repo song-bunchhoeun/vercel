@@ -7,12 +7,14 @@ on:
       - dev
       - uat
       - develop
+      - feat/lmd-gitaction
   pull_request:
     branches:
       - main
       - dev
       - uat
       - develop
+      - feat/lmd-gitaction
 
 jobs:
   build:
