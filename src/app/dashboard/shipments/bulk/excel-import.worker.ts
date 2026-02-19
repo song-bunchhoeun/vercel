@@ -23,7 +23,7 @@ const cleanPhone = (val: CellValue): string => {
 };
 const WAREHOUSE_ID_COL = 8;
 const mapToShipmentData = (row: Row): ShipmentImportData => ({
-    warehouseId: String(row[8] || "").trim(),
+    warehouseId: String(row[WAREHOUSE_ID_COL] || "").trim(), 
     customer: {
         name: String(row[0] || '').trim(),
         primaryPhone: cleanPhone(row[1])
